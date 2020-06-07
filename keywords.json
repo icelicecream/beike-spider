@@ -1,0 +1,84 @@
+{
+	"keywords": [
+		{
+			"kw": "name",
+			"data_kw": "resblock_name",
+			"ch_kw": "名称"
+		},
+		{
+			"kw": "addr",
+			"data_kw": "address",
+			"ch_kw": "位置"
+		},
+		{
+			"kw": "alias",
+			"data_kw": "resblock_alias",
+			"ch_kw": "标准名"
+		},
+		{
+			"kw": "tags",
+			"data_kw": "tags",
+			"ch_kw": "标签"
+		},
+		{
+			"kw": "area",
+			"data_kw": "resblock_frame_area_range",
+			"ch_kw": "建筑面积"
+		},
+		{
+			"kw": "min_area",
+			"data_kw": "min_frame_area",
+			"ch_kw": "最小面积"
+		},
+		{
+			"kw": "max_area",
+			"data_kw": "max_frame_area",
+			"ch_kw": "最大面积"
+		},
+		{
+			"kw": "total_price",
+			"data_kw": "total_price_start",
+			"ch_kw": "最低总价"
+		},
+		{
+			"kw": "avg_price",
+			"data_kw": "reference_avg_price",
+			"ch_kw": "均价"
+		},
+		{
+			"kw": "url",
+			"data_kw": "url",
+			"ch_kw": "链接地址"
+		},
+		{
+			"kw": "type",
+			"data_kw": "house_type",
+			"ch_kw": "类型"
+		},
+		{
+			"kw": "city",
+			"data_kw": "city_name",
+			"ch_kw": "所在城市"
+		},
+		{
+			"kw": "district",
+			"data_kw": "district",
+			"ch_kw": "所在区域"
+		},
+		{
+			"kw": "bizcircle",
+			"data_kw": "bizcircle_name",
+			"ch_kw": "所在板块"
+		},
+		{
+			"kw": "decoration",
+			"data_kw": "decoration",
+			"ch_kw": "精装还是毛坯"
+		},
+		{
+			"kw": "converged_rooms",
+			"data_kw": "converged_rooms",
+			"ch_kw": "每个产品的大小和房间数"
+		}
+	]
+}
