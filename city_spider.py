@@ -33,7 +33,7 @@ class BeiKeSpider(object):
         req = requests.get(f'{city_url}/pg1/?_t=1')
         return req.json()['data']['total']
 
-    # 制作一个城市链接地址的迭代器，需要用try-except和StopIteration来防止输出结束后的报错
+    # 制作一个城市链接地址的迭代器
     def get_city_url(self):
         url = 'https://hz.fang.ke.com/loupan'
         req = requests.get(url)
@@ -57,6 +57,7 @@ class BeiKeSpider(object):
         for page in range(start_page, end_page + 1):
             self.get_data_from_page(city_url, page, city_collection)
             print(f'下载了第{page}页的数据')
+            # 进行适量的延时，避免被封ip
             sleep(randint(300, 700) / 100)
             # Thread(target=self.get_data_from_page,
             #        args=(city_url, page, city_collection)).start()
@@ -72,7 +73,6 @@ class BeiKeSpider(object):
 def main():
     beike = BeiKeSpider()
     beike.run()
-    # beike.get_project_data('https://hz.fang.ke.com/loupan')
 
 
 if __name__ == "__main__":
